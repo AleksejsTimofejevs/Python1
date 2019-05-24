@@ -50,12 +50,12 @@ class Fight:
             damageperhit = creature1._damage/creature2._armor
             creature2._health -= damageperhit
             if creature2._health <= 0:
-                print('{} победил, осталось !'.format(creature1.name))
+                print('{} победил, осталось {} хп!'.format(creature1.name, creature1.health))
                 break
             damageperhit = creature1._damage/creature2._armor
             creature2._health -= damageperhit
             if creature1._health <= 0:
-                print('{} победил, осталось !'.format(creature2.name))
+                print('{} победил, осталось {} хп!'.format(creature2.name, creature2.health))
 
 
 player = Player('Игрок1', 120, 40, 2)
